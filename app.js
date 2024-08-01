@@ -10,7 +10,7 @@ async function getWeather(userInput) {
   windSpeed.innerHTML = 0 + "km/h";
   try {
     let response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=1945e1ddc0a14cdb81c91454240807&q=${userInput}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=1945e1ddc0a14cdb81c91454240807&q=${userInput}&aqi=no`
     );
     let data = await response.json();
     console.log(data);
