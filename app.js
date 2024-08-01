@@ -16,7 +16,7 @@ async function getWeather(userInput) {
     console.log(data);
     if (data.error && data.error.code == 1006) {
       weatherText.innerHTML = "Oops! Location not found!";
-      weatherIcon.src = "Images/404.png";
+      weatherIcon.src = "Images/notFound.png";
       return;
     }
     if (data.current) {
