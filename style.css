@@ -15,8 +15,8 @@ body {
 }
 
 .container {
-  height: 88vh;
-  width: 40vw;
+  height: 95vh;
+  width: 600px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -78,7 +78,7 @@ body {
 }
 
 .weather-item img {
-  width: 48%;
+  width: 300px;
 }
 
 .weather-item p {
@@ -133,7 +133,7 @@ body {
 
 @media only screen and (max-width: 1400px) {
   .weather-item img {
-    width: 45%;
+    width: 250px;
   }
 
   #temp {
@@ -166,8 +166,8 @@ body {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
   .weather-item img {
-    width: 65%;
+    width: 200px;
   }
 }
