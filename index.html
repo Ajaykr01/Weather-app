@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./images/favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <div class="search-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" placeholder="Enter your location" id="userInput" />
+          <i class="fa-solid fa-magnifying-glass" id="button"></i>
+        </div>
+
+        <div class="weather-item">
+          <img src="./images/cloud.png" id="weatherImg" />
+          <p id="temp">0<sup>°C</sup></p>
+          <p id="weather-condition"></p>
+
+          <div class="weather-info">
+            <div class="humidity">
+              <i class="fa-solid fa-water" id="waterIcon"></i>
+              <div class="humidity-text">
+                <span id="humidity">0%</span>
+                <p id="humidity-para">Humidity</p>
+              </div>
+            </div>
+
+            <div class="wind">
+              <i class="fa-solid fa-wind" id="windIcon"></i>
+              <div class="wind-text">
+                <span id="wind-speed">0Km/h</span>
+                <p id="wind-para">Wind speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
