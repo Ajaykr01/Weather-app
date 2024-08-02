@@ -30,19 +30,19 @@ async function getWeather(userInput) {
     }
     switch (data.current.condition.text) {
       case "Clear":
-        weatherIcon.src = "Images/clear.png";
+        weatherIcon.src = "images/clear.png";
         break;
       case "Cloud":
-        weatherIcon.src = "Images/cloud.png";
+        weatherIcon.src = "images/cloud.png";
         break;
       case "Mist":
-        weatherIcon.src = "Images/mist.png";
+        weatherIcon.src = "images/mist.png";
         break;
       case "Rain":
-        weatherIcon.src = "Images/rain.png";
+        weatherIcon.src = "images/rain.png";
         break;
       case "Snow":
-        weatherIcon.src = "Images/snow.png";
+        weatherIcon.src = "images/snow.png";
         break;
       default:
         weatherIcon.src = data.current.condition.icon;
